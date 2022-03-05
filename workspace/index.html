@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de recoleción de datos</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+		<h1>Formulario de recolección de datos</h1>
+		<div>
+
+
+			<form action="index.php" method="POST">
+			<table width="50%" border="1" align="center">
+				<tr>
+					<td><label>Escriba su nombre</label></td>
+					<td><input type="text" name="nombre_estudiante" placeholder="Escriba su nombre"></td>
+				</tr>
+				<tr>
+					<td><label>Escriba su edad</label></td>
+					<td><input type="number" name="edad_estudiante" placeholder="Escriba su Edad"></td>
+				</tr>
+				<tr>
+					<td><label>Escriba su nota</label></td>
+					<td><input type="number" name="nota_estudiante" placeholder="Escriba su Nota"></td>
+				</tr>
+				<tr>
+					<td><label>Seleccione si está registrado o no</label></td>
+					<td><select name="ubicacion_estudiante">
+						<option value="Si">Si</option>
+						<option value="No">No</option>
+					</select></td>
+				</tr>
+
+				<tr>
+					<div>
+						<td><label>¿Cuál es su nivel educativo?</label></td>
+						<td>
+							<input type="radio" name="nivel_educacion" value="Primaria" checked>
+							<label>Primaria</label>
+
+							<input type="radio" name="nivel_educacion" value="Secundaria">	
+							<label>Secundaria</label>
+
+							<input type="radio" name="nivel_educacion" value="Bachiller">
+							<label>Bachiller</label>
+
+							<input type="radio" name="nivel_educacion" value="Tecnico">
+							<label>Técnico</label>
+
+							<input type="radio" name="nivel_educacion" value="Pregrado">
+							<label>Pregrado</label>
+					</div>
+				</tr>
+				<tr> 
+					<div>
+						<td><label>¿Cuál es el motivo de su beca?</label></td>
+						<td><textarea name="motivo_beca" placeholder="Ej: Yo merezco esta beca porque mis resultados academicos han sido siempre sobresalientes independientemente de situación economica desfavorable..."></textarea></td>
+					</div>
+				</tr>
+				<tr>
+					<td>
+						<label>¿Cuál es su nivel socioeconomico?</label>
+					</td>
+					<td><select name="nivel_socioeconomico">
+						
+						<option value="Estrato 1" selected>Estrato 1</option>
+						<option value="Estrato 2">Estrato 2</option> 
+						<option value="Estrato 3">Estrato 3</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2" ><input type="submit" name="" value="ENVIAR DATOS"></td>
+				</tr>
+			</table>
+			</form>
+		</div>
+	</center>
+
+    
+</body>
+</html>
