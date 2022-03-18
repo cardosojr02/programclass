@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción de notas</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+		<h1>INSCRIPCIÓN DE NOTAS 2022-1</h1>
+		<div>
+
+
+			<form action="index.php" method="POST">
+			<table width="50%" border="1" align="center">
+
+				<tr>
+                 <td><label>Seleccione el estudiante</label></td>
+                 <td><select name="nombre_estudiante">
+                            <option value="Arley Cardoso">Arley Cardoso</option>
+                            <option value="Manel Castells">Manel Castells</option>
+                            <option value="Jose Luis Vivas">Jose Luis Vivas</option>
+                            <option value="Abdellah Cuesta">Abdellah Cuesta</option>
+                            <option value="Vicenta Alonso">Vicenta Alonso</option>
+                            <option value="Cristina Maria Paredes">Cristina Maria Paredes</option>
+                            <option value="Aitana Giraldo">Aitana Giraldo</option>
+                            <option value="Ana Ferrando">Ana Ferrando</option>
+                 </select></td>
+				</tr>
+				<div class="container_notas" id="notas" >
+					<tr>
+						<td><label>Digite una nota</label></td>
+						<td><input width="7em" type="number" name="nota1_estudiante" placeholder="Digite una nota" min="0" max="5.0" step="0.1" required></td>
+					</tr>
+					<tr>
+						<td><label>Digite una nota</label></td>
+						<td><input type="number" name="nota2_estudiante" placeholder="Digite una nota" min="0" max="5.0" step="0.1" required></td>
+					</tr>
+					<tr>
+						<td><label>Digite una nota</label></td>
+						<td><input type="number" name="nota3_estudiante" placeholder="Digite una nota" min="0" max="5.0" step="0.1" required></td>
+					</tr>
+					<tr>
+						<td><label>Digite una nota</label></td>
+						<td><input type="number" name="nota4_estudiante" placeholder="Digite una nota" min="0" max="5.0" step="0.1" required></td>
+					</tr>
+			    </div>
+				
+				<tr>
+					<td align="center" colspan="2" ><input type="submit" name="" value="ENVIAR DATOS"></td>
+				</tr>
+			</table>
+			</form>
+		</div>
+	</center>
+
+    
+</body>
+</html>
